@@ -6,7 +6,10 @@ Pre-requisites:
 ===============
 
 Numpy
+
 Pyrap (python-casacore)
+
 Matplotlib
+
 Seaborn
 
