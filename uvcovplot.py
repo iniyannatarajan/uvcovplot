@@ -59,9 +59,10 @@ for bl in bldict.keys():
     v = uvw[bldict[bl][flag_mask], 1]/wavelen
     ax.plot(np.hstack([u, np.nan, -u]), np.hstack([v, np.nan, -v]), '.', label=labels[bl])
 
-ax.set_xlim(ax.get_xlim()[::-1])
-sns.set_style('whitegrid')
+#ax.set_xlim(ax.get_xlim()[::-1])
+ax.set_xlim(10,-10)
+ax.set_ylim(-10,10)
 
 #plt.legend()
-plt.show()
+plt.savefig(args.ms.split('/')[-1]+'.png')
     
